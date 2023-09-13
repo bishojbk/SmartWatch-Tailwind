@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="fixed right-0 bottom-5 bg-gray rounded-full p-3 transition-all duration-500 ease-in-out cursor-pointer z-50 opacity-0"
+      id="btn-back-to-top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="red"
+      >
+        <g mask="url(#mask0_110_4708)">
+          <path
+            d="M11 20V7.825L5.4 13.425L4 12L12 4L20 12L18.6 13.425L13 7.825V20H11Z"
+            fill="white"
+          />
+        </g>
+      </svg>
+    </div>
+
+    <header class="fixed w-full z-5 transition-all duration-400 ease-in-out">
+      <div
+        class="container mx-auto py-5 flex items-center justify-between px-5"
+      >
+        <img src="./public/images/Logo.svg" alt="logo" />
+
+        <div>
+          <ul class="flex items-center gap-10">
+            <li><a href="#" class="text-gray hover:text-white">Home</a></li>
+
+            <li>
+              <a href="#" class="flex items-center"
+                ><span class="text-gray hover:text-white">Brands </span
+                ><img src="./public/images/dropdown.svg" alt="dropdown"
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="text-gray hover:text-white">Recent Products</a>
+            </li>
+            <li><a href="#" class="text-gray hover:text-white">Contact</a></li>
+            <li><a href="#" class="text-gray hover:text-white">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="./public/images/Group 1.svg"
+            alt="group"
+            class="cursor-pointer"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="bg-black py-24 h-screen">
+        <div class="container mx-auto grid grid-cols-2 gap-96 mt-24 px-5">
+          <div>
+            <h1 class="text-white text-[64px] font-semibold">
+              Discover <br />
+              Most Suitable Watches
+            </h1>
+            <p class="text-gray text-[16px] text-justify pr-24">
+              Find the best, reliable, and cheap smart watches here. We focus on
+              product quality. Here you can find smart watches of almost all
+              brands. So why you are waiting? Just order now!
+            </p>
+
+            <div class="mt-8 flex items-center bg-white p-2 rounded-2xl gap-4">
+              <img
+                src="./public/images/search.svg"
+                alt="search"
+                class="hover:scale-110 cursor-pointer transition duration-300 ease-in-out"
+              />
+              <input
+                type="text"
+                placeholder="Find the best brands"
+                class="border-0 outline-0 w-full"
+              />
+              <button
+                class="py-2 px-5 text-white bg-blue-700 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+
+          <div class="w-full h-full">
+            <img
+              src="./public/images/watch.svg"
+              alt="watch"
+              class="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto py-24 px-5 grid grid-cols-3 gap-5">
+        <div class="flex gap-5 bg-almostwhite py-10 px-8 rounded-2xl">
+          <img src="./public/images/apple.svg" alt="watch" />
+
+          <div>
+            <span class="font-bold text-4xl">Apple</span>
+            <p class="text-gray mt-4">
+              Apple is one of the most famous smart watches providing company.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 bg-almostwhite py-10 px-8 rounded-2xl">
+          <img src="./public/images/xai.svg" alt="watch" />
+
+          <div>
+            <span class="font-bold text-4xl">Apple</span>
+            <p class="text-gray mt-4">
+              Xiaomi smart watches are produced by MI company.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-5 bg-almostwhite py-10 px-8 rounded-2xl">
+          <img src="./public/images/fit.svg" alt="watch" />
+
+          <div>
+            <span class="font-bold text-4xl">Apple</span>
+            <p class="text-gray mt-4">
+              FitBit smart watches are best for there health and fitness
+              features.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto py-24 px-5">
+        <div class="text-center mb-12">
+          <span class="text-blue-500">Find your favourite smart watch.</span>
+          <h3 class="text-4xl font-bold mt-2">Our Latest Products</h3>
+        </div>
+
+        <div class="grid grid-cols-3 gap-y-16">
+          <div>
+            <div
+              class="bg-almostwhite py-10 px-0 rounded flex justify-center w-[80%] cursor-pointer hover:scale-105 transition duration-600 ease-in-out"
+            >
+              <img src="./public/images/watch1.svg" alt="watch" />
+            </div>
+
+            <div class="grid justify-center mt-4 w-[80%]">
+              <h5 class="font-semibold text-2xl mb-1">Apple Smart I</h5>
+              <img
+                src="./public/images/ratings.svg"
+                alt="ratings"
+                class="ml-6"
+              />
+              <div class="flex mt-1">
+                <span class="text-gray line-through text-2xl">$300.00 </span>
+                <span class="font-semibold text-2xl ml-1">$255.00 </span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="bg-almostwhite py-10 px-0 rounded flex justify-center w-[80%] cursor-pointer hover:scale-105 transition duration-600 ease-in-out"
+            >
+              <img src="./public/images/watch2.svg" alt="watch" />
+            </div>
+
+            <div class="grid justify-center mt-4 w-[80%]">
+              <h5 class="font-semibold text-2xl mb-1">Apple Smart II</h5>
+              <img
+                src="./public/images/ratings.svg"
+                alt="ratings"
+                class="ml-6"
+              />
+              <div class="flex mt-1">
+                <span class="text-gray line-through text-2xl">$300.00 </span>
+                <span class="font-semibold text-2xl ml-1">$255.00 </span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="bg-almostwhite py-10 px-0 rounded flex justify-center w-[80%] cursor-pointer hover:scale-105 transition duration-600 ease-in-out"
+            >
+              <img src="./public/images/watch3.svg" alt="watch" />
+            </div>
+
+            <div class="grid justify-center mt-4 w-[80%]">
+              <h5 class="font-semibold text-2xl mb-1">Apple Smart III</h5>
+              <img
+                src="./public/images/ratings.svg"
+                alt="ratings"
+                class="ml-6"
+              />
+              <div class="flex mt-1">
+                <span class="text-gray line-through text-2xl">$300.00 </span>
+                <span class="font-semibold text-2xl ml-1">$255.00 </span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="bg-almostwhite py-10 px-0 rounded flex justify-center w-[80%] cursor-pointer hover:scale-105 transition duration-600 ease-in-out"
+            >
+              <img src="./public/images/watch4.svg" alt="watch" />
+            </div>
+
+            <div class="grid justify-center mt-4 w-[80%]">
+              <h5 class="font-semibold text-2xl mb-1">Apple Smart IV</h5>
+              <img
+                src="./public/images/ratings.svg"
+                alt="ratings"
+                class="ml-6"
+              />
+              <div class="flex mt-1">
+                <span class="text-gray line-through text-2xl">$300.00 </span>
+                <span class="font-semibold text-2xl ml-1">$255.00 </span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="bg-almostwhite py-10 px-0 rounded flex justify-center w-[80%] cursor-pointer hover:scale-105 transition duration-600 ease-in-out"
+            >
+              <img src="./public/images/watch5.svg" alt="watch" />
+            </div>
+
+            <div class="grid justify-center mt-4 w-[80%]">
+              <h5 class="font-semibold text-2xl mb-1">Samsung Watch Pro</h5>
+              <img
+                src="./public/images/ratings.svg"
+                alt="ratings"
+                class="ml-6"
+              />
+              <div class="flex mt-1">
+                <span class="text-gray line-through text-2xl">$300.00 </span>
+                <span class="font-semibold text-2xl ml-1">$255.00 </span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="bg-almostwhite py-10 px-0 rounded flex justify-center w-[80%] cursor-pointer hover:scale-105 transition duration-600 ease-in-out"
+            >
+              <img src="./public/images/watch6.svg" alt="watch" />
+            </div>
+
+            <div class="grid justify-center mt-4 w-[80%] mb-16">
+              <h5 class="font-semibold text-2xl mb-1">Fitbit Max 1</h5>
+              <img
+                src="./public/images/ratings.svg"
+                alt="ratings"
+                class="ml-6"
+              />
+              <div class="flex mt-1">
+                <span class="text-gray line-through text-2xl">$300.00 </span>
+                <span class="font-semibold text-2xl ml-1">$255.00 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <a
+            href="#"
+            class="text-white bg-blue-700 py-3 px-12 rounded-2xl hover:bg-blue-500 transition duration-300 ease-in-out"
+            >View More</a
+          >
+        </div>
+      </section>
+
+      <section class="container mx-auto py-24 px-5">
+        <div class="text-center mb-12">
+          <span class="text-blue-500"
+            >Here are our some of the best clients.</span
+          >
+          <h3 class="text-4xl font-bold mt-2">What People Say About Us</h3>
+        </div>
+
+        <div class="grid grid-cols-2 gap-12">
+          <div class="py-10 px-8 bg-almostwhite rounded-2xl flex gap-8 w-full">
+            <img src="./public/images/man1.svg" alt="man" />
+
+            <div class="mt-12">
+              <h5 class="font-bold text-2xl mb-1">Hamza Faizi</h5>
+              <p class="text-gray mb-3">
+                Don’t waste time, just order! This is the best website to
+                puschase smart watches.
+              </p>
+              <img src="./public/images/ratings.svg" alt="ratings" />
+            </div>
+          </div>
+
+          <div class="py-10 px-8 bg-almostwhite rounded-2xl flex gap-8 w-full">
+            <img src="./public/images/man2.svg" alt="man" />
+
+            <div class="mt-12">
+              <h5 class="font-bold text-2xl mb-1">Hamza Faizi</h5>
+              <p class="text-gray mb-3">
+                I’ve been purchasing smart watches of Mohid for a long time. All
+                the products are good quality.
+              </p>
+              <img src="./public/images/ratings.svg" alt="ratings" />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-12">
+          <img src="./public/images/dots.svg" alt="dots" />
+        </div>
+      </section>
+
+      <section class="container mx-auto py-24 px-5 bg-almostwhite">
+        <div class="grid grid-cols-2 gap-48 ml-40">
+          <div class="mt-24">
+            <h2 class="font-bold text-4xl mb-2">Subscribe To Newsletter</h2>
+            <p class="text-gray mb-2">
+              Get free guide about smart watches daily.
+            </p>
+
+            <div class="bg-white rounded-xl flex mt-5 w-9/12">
+              <input
+                type="text"
+                class="bg-transparent w-full outline-none border-none px-4 py-3"
+                placeholder="Enter Email Address"
+              />
+
+              <button
+                class="py-1 my-1 px-5 text-white bg-blue-700 rounded-lg hover:bg-blue-500 transition duration-300 ease-in-out"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+
+          <img
+            src="./public/images/watch1.svg"
+            alt="watch1.svg"
+            class="object-cover"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black w-full py-6 text-center mt-24">
+      <span class="text-white">Copyright @ 2022 | Mohid</span>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
